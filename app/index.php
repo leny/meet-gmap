@@ -24,13 +24,14 @@ if( !empty( $_SERVER[ "HTTP_X_REQUESTED_WITH" ] ) && strtolower( $_SERVER[ "HTTP
 <!doctype html>
 <html lang="fr">
     <head>
+        <meta charset="utf-8" />
         <title lang="en">Meet GMap</title>
 
         <link rel="stylesheet" href="css/bootstrap.min.css" />
 
         <style media="screen">
             #gmap {
-                height: 500px;
+                height: 375px;
                 background: silver;
             }
         </style>
@@ -80,5 +81,11 @@ if( !empty( $_SERVER[ "HTTP_X_REQUESTED_WITH" ] ) && strtolower( $_SERVER[ "HTTP
                 </div>
             </footer>
         </main>
+
+        <!-- GMap key: AIzaSyBidfSibPbD_Q7e4y3z4GHng_-4LbjCPfs -->
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBidfSibPbD_Q7e4y3z4GHng_-4LbjCPfs"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
