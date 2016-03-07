@@ -34,6 +34,10 @@ if( !empty( $_SERVER[ "HTTP_X_REQUESTED_WITH" ] ) && strtolower( $_SERVER[ "HTTP
                 height: 375px;
                 background: silver;
             }
+
+            kbd {
+                white-space: nowrap;
+            }
         </style>
     </head>
     <body>
@@ -55,8 +59,11 @@ if( !empty( $_SERVER[ "HTTP_X_REQUESTED_WITH" ] ) && strtolower( $_SERVER[ "HTTP
                             <div id="gmap"></div>
                         </div>
                         <div class="panel-footer text-right">
-                            <a href="#" class="btn btn-xs btn-primary">
+                            <a href="#" class="btn btn-xs btn-primary" id="add-marker">
                                 Ajouter un marqueur
+                            </a>
+                            <a href="#" class="btn btn-xs btn-info" id="add-zone">
+                                Ajouter une zone circulaire…
                             </a>
                         </div>
                     </div>
@@ -70,7 +77,10 @@ if( !empty( $_SERVER[ "HTTP_X_REQUESTED_WITH" ] ) && strtolower( $_SERVER[ "HTTP
                     <h3>Qu'est-ce qu'on va faire ?</h3>
                     <p>
                         Déjà, nous allons configurer &amp; afficher notre Google Map.<br />
-                        Ensuite, nous nous occuperons de faire la requête AJAX pour récupérer les informations des marqueurs à afficher sur cette carte.
+                        Ensuite, lorsque le visiteur cliquera sur le bouton <kbd>#add-marker</kbd>, nous nous occuperons de faire la requête AJAX pour récupérer les informations des marqueurs à afficher sur cette carte.
+                    </p>
+                    <p>
+                        Enfin, via le bouton <kbd>#add-zone</kbd>, nous ajouterons un marqueur et une zone circulaire dont le diamètre sera demandé au visiteur.
                     </p>
                 </div>
             </section>
