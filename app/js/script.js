@@ -18,7 +18,7 @@
         gMap = new google.maps.Map( $gmap[ 0 ], {
             "center": new google.maps.LatLng( 50.83, 4.35 ),
             "disableDefaultUI": true,
-            "scrollwheel": false,art
+            "scrollwheel": false,
             // see https://snazzymaps.com for ready-to-use styles
             "styles": [
                 {
