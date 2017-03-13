@@ -1,1 +1,1 @@
-;(function(){"use strict";$(function(){console.log("Kikoo!");});})();
+;(function(){"use strict";var gMap=void 0;var fInitMap=function fInitMap(){gMap=new google.maps.Map(document.getElementById("gmap"),{"center":new google.maps.LatLng(50.83,4.35),"zoom":12});};$(function(){fInitMap();});})();
